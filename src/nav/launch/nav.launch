@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+    <launch>
+        <include file="$(find nav)/launch/gmapping.launch"/>
+        <node pkg='move_base' type='move_base' respawn='false' name='move_base' output='screen'>
+            <param name='local_planner' value='local_planner/PlannerROS' />
+            <rosparam command="load" file="$(find nav)/param/costmap_common.yaml" ns='global_costmap' />
+            <rosparam command="load" file="$(find nav)/param/costmap_common.yaml" ns='local_costmap' />
+            <rosparam command="load" file="$(find nav)/param/local_costmap.yaml" />
+            <rosparam command="load" file="$(find nav)/param/global_costmap.yaml" />
+            <!-- <rosparam command="load" file="$(find nav)/param/move_base.yaml" />  -->
+            <rosparam command="load" file="$(find nav)/param/dwa_local_planner.yaml" />
+        </node>
+    </launch>
