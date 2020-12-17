@@ -1,4 +1,5 @@
 DWAPlannerROS:
+  #VELOCITY
   max_vel_x: 0.45
   min_vel_x: 0.1
   min_vel_theta: -1.0
@@ -27,9 +28,11 @@ DWAPlannerROS:
   vth_samples: 40
   controller_frequency: 10.0
 
+  #TRAJECTORY SCORING PARAMETERS
   path_distabnce_bias: 32.0
   goal_distance_bias: 20.0
   occdist_scale: 0.02
+
   forward_point_distance: 0.325
   stop_time_buffer: 0.2
   scaling_speed: 0.25
