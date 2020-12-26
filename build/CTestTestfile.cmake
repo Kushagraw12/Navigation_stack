@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("nav")
 subdirs("sim")
+subdirs("move_base")

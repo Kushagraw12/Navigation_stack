@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/kush/navigation_ws/build/gtest/cmake_install.cmake")
   include("/home/kush/navigation_ws/build/nav/cmake_install.cmake")
   include("/home/kush/navigation_ws/build/sim/cmake_install.cmake")
+  include("/home/kush/navigation_ws/build/move_base/cmake_install.cmake")
 
 endif()
 

@@ -2,4 +2,4 @@
 source_root_dir = '/home/kush/navigation_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/kush/navigation_ws/devel;/home/kush/nav_ws/devel;/home/kush/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/kush/navigation_ws/devel;/home/kush/nav_ws/devel;/home/kush/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/kush/navigation_ws/devel;/home/kush/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/kush/navigation_ws/devel;/home/kush/catkin_ws/devel;/opt/ros/noetic' != '' else []
